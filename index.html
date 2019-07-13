@@ -1,0 +1,105 @@
+<html lang="en-us">
+
+  <head>
+
+    <meta charset='UTF-8'>
+    <title> Friends Word Guess</title>
+
+    
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+
+    <div class="container text-center">
+
+    <img src="assets/images/friends_logo.png">
+
+      <div class='jumbotrons'>
+        <div class='container'>
+          <h1> Word Guess</h1>
+          <h2>Guess the name of actors on "Friends" Show!</h2>
+          <small>Click any letter to begin...</small>
+        </div><div class="text-center">
+            <button class="btn btn-info btn-sm theme-button">
+              <span class="fa fa-music"></span> Play Theme!</button>
+            <button class="btn btn-success btn-sm pause-button">
+              <span class="fa fa-pause"></span> Pause Song</button>
+          </div>
+
+      </div>
+
+     
+      <div class="row">
+        <div class="col-lg-12">
+
+          
+          <div class="card card-default">
+            <div class="card-header" style="background-color: lightsalmon;">
+                
+              <h3  class="card-title"><strong>Friends' Name to Guess</strong></h3>
+            </div>
+
+            <div class="card-body">
+
+              
+              <h3 id="word-blanks"> </h3>
+
+            </div>
+
+          </div>
+
+          
+          <div class="card card-default">
+            <div class="card-body" style="background-color:yellowgreen ;"></div> >
+
+              
+              <strong>Wrong Guesses: </strong> <span id="wrong-guesses"></span>
+
+            </div>
+          </div>
+
+          
+          <div class="card card-default">
+            <div class="card-body">
+
+          
+              <strong>Guesses Left: </strong> <span id="guesses-left">9</span>
+
+            </div>
+
+          </div>
+
+          
+          <div class="card card-default">
+
+            <div class="card-body">
+
+            <strong>Wins: </strong> <span id="win-counter">0</span>
+
+            </div>
+
+          </div>
+
+            <div class="card card-default">
+            <div class="card-body">
+
+            <strong>Losses: </strong> <span id="loss-counter">0</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/javascript/Game.js"></script>
+   
+</body>
+
+</html>
